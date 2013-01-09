@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        </script>
+        <script>
+        	$(document).ready(function()
+        	{
+        		var fecha = new Date();
+        		var f = fecha.getDate() + "/" + (fecha.getMonth() +1) + "/" + fecha.getFullYear();
+        		$('#contenido').text(f);
+        	});
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="asistencia">
+            <div data-theme="a" data-role="header" data-id="header1">
+                <h3>
+                    Header
+                </h3>
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li>
+                            <a href="#" data-transition="none" data-theme="" data-icon="check" class="ui-btn-active ui-state-persist">
+                                Asistencia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="alumno.html" data-transition="none" data-theme="" data-icon="star">
+                                Alumnos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-transition="none" data-theme="" data-icon="gear">
+                                Configuración
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content" id="contenido">
+            	<h3>Es es el mensaje principal</h3>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
